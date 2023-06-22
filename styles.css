@@ -3,9 +3,18 @@
 }
 
 body {
-    background-color: rgb(108, 75, 34);
+background-color: color-mix(in oklab, #04ff00, #25adad 50%);
+background-image: linear-gradient(to right, rgb(215, 43, 43),rgb(221, 164, 57),rgb(253, 253, 88),rgb(22, 170, 22),rgb(27, 27, 232),indigo,violet);
+margin: 12px;
+text-indent: 3em;
 }
 
 h1 {
-    color:orange;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    /* margin: 120px; */
+    border: 2px solid black;
 }

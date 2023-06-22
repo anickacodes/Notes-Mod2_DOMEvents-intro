@@ -26,3 +26,9 @@ make it a variable
 
 the name of the tag (in the string) is what allows us to select the element
 
+addEventListener() - a function we call on something[the element]
+takes in an arguments (string, and a callback function)
+
+target
+: 
+h1#lesson-object - what are we listening for a click on
