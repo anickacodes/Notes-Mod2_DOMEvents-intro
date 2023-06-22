@@ -1,0 +1,28 @@
+Event listeners and handlers always go together.
+two parts of one method
+
+handling events
+describe the action taken when the event has happened (open a pop-up, validate some input, etc. )
+
+event listeners - listening to the response 
+elements (button, h1, etc.) and events (click, hover etc.) will be actively listening.
+ex: if someone is laughing at a show, speaker pauses to listen 
+
+
+what does the stage look like before we set up ?
+default - html 
+lights, decorations - css
+
+ * {
+    margin: 0;
+} target everything 
+
+DOM content loading - an event 
+
+allows everyything to load before anyything functional 
+
+const h1 = document.querySelector("h1"); 
+make it a variable 
+
+the name of the tag (in the string) is what allows us to select the element
+
