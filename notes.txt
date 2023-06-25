@@ -34,3 +34,41 @@ target
 h1#lesson-object - what are we listening for a click on
 
 //if div intself, change content inside
+
+
+
+/** 
+EVENT LISTENERS - most frequently used js structures in web design that add interactive functionality by "listening" to diff events taking place on page
+like press a key,elements load, press a key
+
+types: load events, touch , key down, mouse over, click
+*/
+
+/**
+ *       ways to add:
+ * directly into the html on the button tag using "onclick='alert('')'
+ *
+ * element.addEventListener("click", function)
+ */
+
+//NOTE adding event listener to html can only do 1 bc a new one overrides the old
+//best practice do it in a js bc the functions are limitless
+
+
+/**
+ * event propogation & delegation
+ * 
+ * propogation: how an event travels through DOM (electricity through a wire)
+ * event passing through every node until forcefully stopped
+ * 
+ * capture phase- startsfrom root to target
+ * 
+ * target - 
+ * 
+ * bubbling - goes back to beginning once comlpete, from end back up to parent
+ */
+
+ //e.stopPropagation()//once it reaches here, stop propogating
+
+//bubbling - change all true to false ; goes from target upwards
+//default behavior of an anchor tag is t redirect you -so if a flash reload is seen, it's doing its thing

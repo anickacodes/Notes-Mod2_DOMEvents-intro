@@ -195,7 +195,7 @@ revealBtn.addEventListener("click", revealContent);
 /**
  * event propogation & delegation
  * 
- * propgation: how an event travels through DOM (electricity through a wire)
+ * propogation: how an event travels through DOM (electricity through a wire)
  * event passing through every node until forcefully stopped
  * 
  * capture phase- startsfrom root to target
@@ -207,25 +207,29 @@ revealBtn.addEventListener("click", revealContent);
 
 
 window.addEventListener("click", function(){
-    console.log('Window')
-}, true);
+    console.log("first phase",'Window')
+}, false);
 
 document.addEventListener("click", function() {
     console.log('Document')
-}, true);
+}, false);
 
-document.querySelector('.div2').addEventListener("click", function(){
+document.querySelector('.div2').addEventListener("click", function(e){
+    //e.stopPropagation()//once it reaches here, stop propogating
     console.log('DIV 2')
-}, true);
+},{once: true}); //only fire once
 
 
 document.querySelector('.div1').addEventListener("click", function(){
     console.log('DIV 1')
-}, true);
+}, false);
 
-document.querySelector('button').addEventListener("click", function(e){
-    console.log(e)
-}, true);
+document.querySelector('.button').addEventListener("click", function(e){
+    console.log("target",e.target.innerText="CLick")
+}, false);
+
+//bubbling - change all true to false ; goes from target upwards
+//default behavior of an anchor tag is t redirect you -so if a flash reload is seen, it's doing its thing
 
 
 // console.log(HTMLAllCollection)

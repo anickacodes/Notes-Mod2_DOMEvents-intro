@@ -3,10 +3,10 @@
 }
 
 body {
-background-color: color-mix(in oklab, #04ff00, #25adad 50%);
-background-image: linear-gradient(to right, rgb(215, 43, 43),rgb(221, 164, 57),rgb(253, 253, 88),rgb(22, 170, 22),rgb(27, 27, 232),indigo,violet);
-margin: 12px;
-text-indent: 3em;
+    background-color: color-mix(in oklab, #04ff00, #25adad 50%);
+    background-image: linear-gradient(to right, rgb(215, 43, 43), rgb(221, 164, 57), rgb(253, 253, 88), rgb(22, 170, 22), rgb(27, 27, 232), indigo, violet);
+    margin: 12px;
+    text-indent: 3em;
 }
 
 h1 {
@@ -23,6 +23,7 @@ h2 {
     text-align: center;
     font-weight: 200px;
 }
+
 #blank-box {
     margin: 120px;
     background-color: white;
@@ -38,5 +39,18 @@ h2 {
 
 .hidden-content.reveal-btn {
     display: block;
-   
+
+}
+
+.button {
+    font-size: 30px;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: solid 3px #fff;
+    background: none;
+    color: #fff;
+    display: block;
 }
