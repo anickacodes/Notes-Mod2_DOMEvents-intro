@@ -192,6 +192,42 @@ function revealContent() {
 
 revealBtn.addEventListener("click", revealContent);
 
+/**
+ * event propogation & delegation
+ * 
+ * propgation: how an event travels through DOM (electricity through a wire)
+ * event passing through every node until forcefully stopped
+ * 
+ * capture phase- startsfrom root to target
+ * 
+ * target - 
+ * 
+ * bubbling - goes back to beginning once comlpete, from end back up to parent
+ */
+
+
+window.addEventListener("click", function(){
+    console.log('Window')
+}, true);
+
+document.addEventListener("click", function() {
+    console.log('Document')
+}, true);
+
+document.querySelector('.div2').addEventListener("click", function(){
+    console.log('DIV 2')
+}, true);
+
+
+document.querySelector('.div1').addEventListener("click", function(){
+    console.log('DIV 1')
+}, true);
+
+document.querySelector('button').addEventListener("click", function(e){
+    console.log(e)
+}, true);
+
+
 // console.log(HTMLAllCollection)
 // console.log(HTMLCollection)
 // console.log(HTMLOListElement)
