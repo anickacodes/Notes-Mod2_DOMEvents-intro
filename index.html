@@ -1,23 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel="stylesheet" href="./styles.css"/>
-    <script src="main.js" defer ></script>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="main.js" defer></script>
 
     <title>JS Events</title>
 </head>
+
 <body>
     <h1 id="main-title">Hello, it's me</h1>
-    <h1 id="lesson-object">Loading......</h1>
-
-    <img src="" alt="blank on purpose" > 
-
+    <h1 id="lesson-object" class="list-item">Loading......</h1>
+    <!-- maybe -->
+    <img src="" alt="blank on purpose">
+    <ul>
+        <li id="root" class="list-items">
+            <span>Cup</span>
+            juice
+        </li>
+        <li id="secondary" class="list-items">pop</li>
+        <li id="thirdly" class="list-items">soda</li>
+    </ul>
     <h2>
         <span>10</span>✨🤍
     </h2>
-</body>
-</html>
+    <div class="container">
+        
+        <div id="blank-box">
+            <h3 id="blank-box-value"></h3>
+        </div>
 
+        <button class="reveal-btn boxes">Reveal
+            More</button>
+        <div class="hidden-content boxes">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia distinctio hic facilis, repudiandae incidunt
+            quisquam neque officiis quibusdam cum quam suscipit dolorem animi aliquid harum.
+            Unde sed illo aut officiis inventore quod quibusdam, ipsam aliquam reprehenderit ad minima sit ipsa? Ducimus
+            nesciunt laudantium deleniti porro maxime molestias reiciendis, hic omnis?
+        </div>
+
+    </div>
+
+    <div class="Two-Container">
+
+        <div class="boxes box-1">
+            <h4 id="heading">Ex 1</h4>
+            <button onclick="alert('I made a button in html')">Enter</button>
+        </div>
+
+        <div class="boxes box-2">
+            <h4 id="heading">Ex 2</h4>
+            <button class="btn-2">Enter</button>
+        </div>
+
+        <div class="boxes box-3">
+            <h4 id="heading">Ex 3</h4>
+            <button class="btn-3">Enter</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

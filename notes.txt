@@ -32,3 +32,5 @@ takes in an arguments (string, and a callback function)
 target
 : 
 h1#lesson-object - what are we listening for a click on
+
+//if div intself, change content inside

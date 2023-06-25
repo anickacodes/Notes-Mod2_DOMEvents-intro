@@ -18,3 +18,24 @@ h2 {
     /* margin: 120px; */
     border: 2px solid black;
 }
+
+.list-items {
+    text-align: center;
+    font-weight: 200px;
+}
+#blank-box {
+    margin: 120px;
+    background-color: white;
+    border: 10px solid black;
+
+    width: 100px;
+    height: 100px
+}
+
+.hidden-content {
+    display: none;
+}
+
+.hidden-content.reveal-btn {
+    display: block;
+}
