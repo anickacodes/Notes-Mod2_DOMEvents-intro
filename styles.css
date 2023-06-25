@@ -21,7 +21,8 @@ h2 {
 
 .list-items {
     text-align: center;
-    font-weight: 200px;
+   font-style: oblique;
+   font-family: geneva;
 }
 
 #blank-box {
@@ -53,4 +54,10 @@ h2 {
     background: none;
     color: #fff;
     display: block;
+}
+
+#sports {
+   flood-color: aqua;
+    text-align: left;
+    font-weight: 20px;
 }

@@ -72,3 +72,8 @@ types: load events, touch , key down, mouse over, click
 
 //bubbling - change all true to false ; goes from target upwards
 //default behavior of an anchor tag is t redirect you -so if a flash reload is seen, it's doing its thing
+
+
+.preventDefault() on the event prevents default fire action 
+
+event delegation - allows user to append SINGLE event LISTENER to parent element that adds it to present and future desecendants that match the selector 

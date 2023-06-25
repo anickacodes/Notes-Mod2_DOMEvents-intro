@@ -207,29 +207,57 @@ revealBtn.addEventListener("click", revealContent);
 
 
 window.addEventListener("click", function(){
-    console.log("first phase",'Window')
+    //console.log("first phase",'Window')
 }, false);
 
 document.addEventListener("click", function() {
-    console.log('Document')
+    //console.log('Document')
 }, false);
 
 document.querySelector('.div2').addEventListener("click", function(e){
     //e.stopPropagation()//once it reaches here, stop propogating
-    console.log('DIV 2')
+    //console.log('DIV 2')
 },{once: true}); //only fire once
 
 
 document.querySelector('.div1').addEventListener("click", function(){
-    console.log('DIV 1')
+    //console.log('DIV 1')
 }, false);
 
 document.querySelector('.button').addEventListener("click", function(e){
-    console.log("target",e.target.innerText="CLick")
+    e.preventDefault()
+   // console.log("target",e.target.innerText="CLick")
 }, false);
 
 //bubbling - change all true to false ; goes from target upwards
 //default behavior of an anchor tag is t redirect you -so if a flash reload is seen, it's doing its thing
+
+/**
+ * event delegation : allows user to add SINGLE EVENT LISTENENR TO PARENT & PASSS ON TO CHILDREN
+ */
+
+document.querySelector("#sports").addEventListener("click", function(e) {
+ console.log(e.target.getAttribute('id') + ' is clicked')
+
+   const target = e.target;
+
+    if (target.matches('li')) {
+        target.style.backgroundColor = "magenta"
+    }
+})
+
+const sports = document.querySelector('#sports')
+const newSport = document.createElement('li')
+
+newSport.innerText="Rugby"
+newSport.setAttribute('id', 'rugby')
+
+sports.appendChild(newSport)
+
+
+
+
+
 
 
 // console.log(HTMLAllCollection)
